@@ -2,4 +2,14 @@
 
 <h3>Actual Price</h3>
 
+<select class="form-control" @bind="SelectedType">
+    <option value="">Select a type</option>
+    <option value="gold">Gold</option>
+    <option value="silver">Silver</option>
+</select>
 
+<img src="images/maple1.jpg" class="coin-image" alt="Maple leaf 1 Oz">
+
+@code {
+    private string SelectedType { get; set; } = "";
+}
